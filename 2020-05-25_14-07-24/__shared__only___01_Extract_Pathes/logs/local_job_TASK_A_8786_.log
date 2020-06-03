@@ -1,8 +1,0 @@
-#job name: TASK_A with job id: 8786
-#command
-/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-05-25_14-07-24/__shared__only___01_Extract_Pathes/scripts/TASK_A.sh
-#cmdout
-Submitted batch job 34838
-
-#cmderr
-
