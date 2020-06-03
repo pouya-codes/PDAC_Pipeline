@@ -1,0 +1,44 @@
+{
+    "test_name" : "lgg_train_1",
+    "sorted_location": "/projects/ovcare/classification/zli/ml/data/tcga/patches_256_sorted_RNA",
+    "log_folder_location": "/projects/ovcare/classification/zli/ml/logs/train",
+	"gpu_to_use": 0,
+	"chunk_file_location": "/projects/ovcare/classification/zli/ml/data/tcga/training_chunks_1.json",
+	"training_chunks": "0",
+	"validation_chunks": "1",
+    "test_chunks": "2",
+    "patch_workers" : 10,
+    "training_shuffle" : false,
+    "validation_shuffle" : false,
+    "training_batches" : 8200,
+    "validation_frequency" : 200,
+    "num_validation_batches" : 100,
+    "save_interval" : 999999999,
+    "batch_size" : 32,
+	"model_save_location": "/projects/ovcare/classification/zli/ml/models/RNA_model",
+    "test_shuffle": false,
+    "test_log_folder_location": "/projects/ovcare/classification/zli/ml/logs/test",
+    "test_results_location": "/projects/ovcare/classification/zli/ml/logs/result",
+    "path_value_to_index" : {
+        "R1" : 0,
+        "R2" : 1,
+        "R3": 2,
+        "R4": 3
+    },
+    "model_config" : {
+        "num_subtypes" : 4,
+        "deep_model" : "vgg19_bn",
+        "use_weighted_loss" : false,
+        "continue_train" : false,
+        "parameters" : {
+            "pretrained" : true
+        },
+        "optimizer" : {
+            "type" : "Adam",
+            "parameters" : {
+                "lr" : 0.0002,
+                "amsgrad" : true
+            }
+        }
+    } 
+}
