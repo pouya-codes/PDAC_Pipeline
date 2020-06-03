@@ -1,0 +1,145 @@
+
+__PIPELINE_INFO__: 
+    date_last_updated: 
+    name: 'Pipeline'
+    data_type: 
+    author: 'cchen'
+    Kronos_version: '2.3.0'
+    host_cluster: 
+    version: '0.00.1'
+    input_type: 
+    date_created: '2019-05-07'
+    output_type: 
+__GENERAL__: 
+    docker: '__REQUIRED__'
+__SHARED__: 
+    anno_loc: 
+    patch_loc: 
+    img_loc: 
+__SAMPLES__: 
+    # sample_id:
+    #    param1: value1
+    #    param2: value2
+TASK_CREATE_TRAINING_FILES_1: 
+    run: 
+        interval_file: 
+        requirements: 
+            docker: 
+        boilerplate: 
+        use_cluster: False
+        num_cpus: 1
+        parallel_run: False
+        merge: True
+        add_breakpoint: False
+        memory: '128G'
+        forced_dependencies: []
+        env_vars: 
+        parallel_params: []
+    reserved: 
+        # do not change this section.
+        seed_version: '0.00.1'
+        component_version: '0.00.1'
+        component_name: 'kronos_component_singularity'
+    component: 
+        input_files: 
+            slurm_error: '/home/poahmadvand/ml/slurm/create_training_files_1.%j.err'
+            chunk_file_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_2/chunks.json'
+            linker_location: '/projects/ovcare/classification'
+            output_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/training_chunks_1.json'
+            seed: 1
+            singularity_image: '/projects/ovcare/classification/pouya/components/docker_create_training_files/docker_create_training_files.sif'
+            validation_chunks: '2'
+            number_of_patches: '1000000_200000_200000'
+            slurm_max_time: '10:00:00'
+            slurm_machine: 'dlhost04'
+            training_chunks: '0_1'
+            slurm_job_name: 'create_training_files_slurm'
+            slurm_num_cpu: 2
+            slurm_num_gpu: 2
+            slurm_output: '/home/poahmadvand/ml/slurm/create_training_files_1.%j.out'
+            slurm_queue: 'rtx5000'
+            testing_chunks: '2'
+        parameters: 
+        output_files: 
+TASK_CREATE_TRAINING_FILES_2: 
+    run: 
+        interval_file: 
+        requirements: 
+            docker: 
+        boilerplate: 
+        use_cluster: False
+        num_cpus: 1
+        parallel_run: False
+        merge: True
+        add_breakpoint: False
+        memory: '128G'
+        forced_dependencies: []
+        env_vars: 
+        parallel_params: []
+    reserved: 
+        # do not change this section.
+        seed_version: '0.00.1'
+        component_version: '0.00.1'
+        component_name: 'kronos_component_singularity'
+    component: 
+        input_files: 
+            slurm_error: '/home/poahmadvand/ml/slurm/create_training_files_2.%j.err'
+            chunk_file_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_2/chunks.json'
+            linker_location: '/projects/ovcare/classification'
+            output_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/training_chunks_2.json'
+            seed: 1
+            singularity_image: '/projects/ovcare/classification/pouya/components/docker_create_training_files/docker_create_training_files.sif'
+            validation_chunks: '0'
+            number_of_patches: '1000000_200000_200000'
+            slurm_max_time: '10:00:00'
+            slurm_machine: 'dlhost04'
+            training_chunks: '1_2'
+            slurm_job_name: 'create_training_files_slurm'
+            slurm_num_cpu: 2
+            slurm_num_gpu: 2
+            slurm_output: '/home/poahmadvand/ml/slurm/create_training_files_2.%j.out'
+            slurm_queue: 'rtx5000'
+            testing_chunks: '0'
+        parameters: 
+        output_files: 
+TASK_CREATE_TRAINING_FILES_3: 
+    run: 
+        interval_file: 
+        requirements: 
+            docker: 
+        boilerplate: 
+        use_cluster: False
+        num_cpus: 1
+        parallel_run: False
+        merge: True
+        add_breakpoint: False
+        memory: '128G'
+        forced_dependencies: []
+        env_vars: 
+        parallel_params: []
+    reserved: 
+        # do not change this section.
+        seed_version: '0.00.1'
+        component_version: '0.00.1'
+        component_name: 'kronos_component_singularity'
+    component: 
+        input_files: 
+            slurm_error: '/home/poahmadvand/ml/slurm/create_training_files_3.%j.err'
+            chunk_file_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_2/chunks.json'
+            linker_location: '/projects/ovcare/classification/'
+            output_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/training_chunks_3.json'
+            seed: 1
+            singularity_image: '/projects/ovcare/classification/pouya/components/docker_create_training_files/docker_create_training_files.sif'
+            validation_chunks: '1'
+            number_of_patches: '10000000_200000_200000'
+            slurm_max_time: '10:00:00'
+            slurm_machine: 'dlhost04'
+            training_chunks: '0_2'
+            slurm_job_name: 'create_training_files_slurm'
+            slurm_num_cpu: 2
+            slurm_num_gpu: 2
+            slurm_output: '/home/poahmadvand/ml/slurm/create_training_files_3.%j.out'
+            slurm_queue: 'rtx5000'
+            testing_chunks: '1'
+        parameters: 
+        output_files: 

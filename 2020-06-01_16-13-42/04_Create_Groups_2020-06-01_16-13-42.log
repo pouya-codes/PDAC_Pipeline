@@ -1,0 +1,86 @@
+[2020-06-01 16:13:42,471] [04_Create_Groups] [INFO]:	------------------------------
+[2020-06-01 16:13:42,471] [04_Create_Groups] [INFO]:	 PIPELINE RUN INFO
+[2020-06-01 16:13:42,476] [04_Create_Groups] [INFO]:	------------------------------
+[2020-06-01 16:13:42,493] [04_Create_Groups] [INFO]:	Kronos version: 2.3.0
+[2020-06-01 16:13:42,497] [04_Create_Groups] [INFO]:	pipeline name: 04_Create_Groups
+[2020-06-01 16:13:42,526] [04_Create_Groups] [INFO]:	run id: 2020-06-01_16-13-42
+[2020-06-01 16:13:42,538] [04_Create_Groups] [INFO]:	launch date: 2020-06-01 16:13:42
+[2020-06-01 16:13:42,553] [04_Create_Groups] [INFO]:	user: poahmadvand
+[2020-06-01 16:13:42,554] [04_Create_Groups] [INFO]:	hostname: dlhost02
+[2020-06-01 16:13:42,554] [04_Create_Groups] [INFO]:	command line arguments:
+[2020-06-01 16:13:42,555] [04_Create_Groups] [INFO]:		drmaa_library_path		= lib/lx24-amd64/libdrmaa.so
+[2020-06-01 16:13:42,556] [04_Create_Groups] [INFO]:		no_key_legend		= False
+[2020-06-01 16:13:42,556] [04_Create_Groups] [INFO]:		extension		= png
+[2020-06-01 16:13:42,557] [04_Create_Groups] [INFO]:		run_id		= None
+[2020-06-01 16:13:42,561] [04_Create_Groups] [INFO]:		python_installation		= python
+[2020-06-01 16:13:42,561] [04_Create_Groups] [INFO]:		num_pipelines		= 1
+[2020-06-01 16:13:42,562] [04_Create_Groups] [INFO]:		no_prefix		= True
+[2020-06-01 16:13:42,563] [04_Create_Groups] [INFO]:		components_dir		= /projects/ovcare/classification/pouya/components
+[2020-06-01 16:13:42,563] [04_Create_Groups] [INFO]:		working_dir		= /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-06-01_16-13-42
+[2020-06-01 16:13:42,564] [04_Create_Groups] [INFO]:		print_only		= False
+[2020-06-01 16:13:42,564] [04_Create_Groups] [INFO]:		pipeline_name		= 04_Create_Groups
+[2020-06-01 16:13:42,565] [04_Create_Groups] [INFO]:		job_scheduler		= drmaa
+[2020-06-01 16:13:42,566] [04_Create_Groups] [INFO]:		draw_vertically		= False
+[2020-06-01 16:13:42,571] [04_Create_Groups] [INFO]:		log_file		= None
+[2020-06-01 16:13:42,576] [04_Create_Groups] [INFO]:		qsub_options		= None
+[2020-06-01 16:13:42,577] [04_Create_Groups] [INFO]:		num_jobs		= 1
+[2020-06-01 16:13:42,578] [04_Create_Groups] [INFO]:	------------------------------
+[2020-06-01 16:13:42,578] [04_Create_Groups] [INFO]:	 PIPELINE BEGINS
+[2020-06-01 16:13:42,579] [04_Create_Groups] [INFO]:	------------------------------
+[2020-06-01 16:13:42,816] [04_Create_Groups] [INFO]:	running __shared__only___04_Create_Groups pipeline with command: python /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/intermediate_pipeline_scripts/__shared__only___04_Create_Groups.py --drmaa_library_path 'lib/lx24-amd64/libdrmaa.so' --extension 'png' --run_id '2020-06-01_16-13-42' --python_installation 'python' --num_pipelines 1 --no_prefix --components_dir '/projects/ovcare/classification/pouya/components' --working_dir '/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-06-01_16-13-42' --pipeline_name '__shared__only___04_Create_Groups' --job_scheduler 'drmaa' --sample_id '__shared__only__' --log_file '/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-06-01_16-13-42/04_Create_Groups_2020-06-01_16-13-42.log' --num_jobs 1
+[2020-06-01 16:13:42,823] [04_Create_Groups] [INFO]:	
+[2020-06-01 16:13:44,137] [__shared__only___04_Create_Groups] [INFO]:	TASK_CREATE_GROUPS for kronos_component_singularity started in __shared__only___04_Create_Groups pipeline
+[2020-06-01 16:13:44,137] [__shared__only___04_Create_Groups] [INFO]:	
+[2020-06-01 16:13:44,175] [__shared__only___04_Create_Groups] [ERROR]:	unexpected error in "kronos_component_singularity_TASK_CREATE_GROUPS_function"
+[2020-06-01 16:13:44,202] [__shared__only___04_Create_Groups] [ERROR]:	
+[2020-06-01 16:13:44,205] [__shared__only___04_Create_Groups] [ERROR]:	Traceback (most recent call last):
+[2020-06-01 16:13:44,220] [__shared__only___04_Create_Groups] [ERROR]:	File "/home/poahmadvand/py2env/lib/python2.7/site-packages/kronos/logger.py", line 154, in wrapper
+[2020-06-01 16:13:44,232] [__shared__only___04_Create_Groups] [ERROR]:	res = func(*args, **kwargs)
+[2020-06-01 16:13:44,250] [__shared__only___04_Create_Groups] [ERROR]:	File "/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/intermediate_pipeline_scripts/__shared__only___04_Create_Groups.py", line 63, in kronos_component_singularity_TASK_CREATE_GROUPS_function
+[2020-06-01 16:13:44,267] [__shared__only___04_Create_Groups] [ERROR]:	run_script = rm.generate_script(TASK_CREATE_GROUPS_task, None, None)
+[2020-06-01 16:13:44,273] [__shared__only___04_Create_Groups] [ERROR]:	File "/home/poahmadvand/py2env/lib/python2.7/site-packages/kronos/run_manager.py", line 113, in generate_script
+[2020-06-01 16:13:44,295] [__shared__only___04_Create_Groups] [ERROR]:	cmd, cmd_args = component.make_cmd(chunk)
+[2020-06-01 16:13:44,302] [__shared__only___04_Create_Groups] [ERROR]:	File "/projects/ovcare/classification/pouya/components/kronos_component_singularity/component_main.py", line 78, in make_cmd
+[2020-06-01 16:13:44,320] [__shared__only___04_Create_Groups] [ERROR]:	self.get_location_args(args, path_args, config_args)
+[2020-06-01 16:13:44,321] [__shared__only___04_Create_Groups] [ERROR]:	File "/projects/ovcare/classification/pouya/components/kronos_component_singularity/component_main.py", line 42, in get_location_args
+[2020-06-01 16:13:44,322] [__shared__only___04_Create_Groups] [ERROR]:	data = json.load(json_file)
+[2020-06-01 16:13:44,323] [__shared__only___04_Create_Groups] [ERROR]:	File "/usr/lib/python2.7/json/__init__.py", line 291, in load
+[2020-06-01 16:13:44,324] [__shared__only___04_Create_Groups] [ERROR]:	**kw)
+[2020-06-01 16:13:44,324] [__shared__only___04_Create_Groups] [ERROR]:	File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+[2020-06-01 16:13:44,325] [__shared__only___04_Create_Groups] [ERROR]:	return _default_decoder.decode(s)
+[2020-06-01 16:13:44,326] [__shared__only___04_Create_Groups] [ERROR]:	File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+[2020-06-01 16:13:44,327] [__shared__only___04_Create_Groups] [ERROR]:	obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+[2020-06-01 16:13:44,328] [__shared__only___04_Create_Groups] [ERROR]:	File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+[2020-06-01 16:13:44,329] [__shared__only___04_Create_Groups] [ERROR]:	raise ValueError("No JSON object could be decoded")
+[2020-06-01 16:13:44,330] [__shared__only___04_Create_Groups] [ERROR]:	ValueError: No JSON object could be decoded
+[2020-06-01 16:13:44,330] [__shared__only___04_Create_Groups] [ERROR]:	unexpected error in "kronos_component_singularity_TASK_CREATE_GROUPS_function"
+[2020-06-01 16:13:44,331] [__shared__only___04_Create_Groups] [ERROR]:	
+[2020-06-01 16:13:44,332] [__shared__only___04_Create_Groups] [ERROR]:	Traceback (most recent call last):
+[2020-06-01 16:13:44,333] [__shared__only___04_Create_Groups] [ERROR]:	File "/home/poahmadvand/py2env/lib/python2.7/site-packages/kronos/logger.py", line 188, in wrapper
+[2020-06-01 16:13:44,333] [__shared__only___04_Create_Groups] [ERROR]:	res = func(*args, **kwargs)
+[2020-06-01 16:13:44,334] [__shared__only___04_Create_Groups] [ERROR]:	File "/home/poahmadvand/py2env/lib/python2.7/site-packages/kronos/logger.py", line 154, in wrapper
+[2020-06-01 16:13:44,345] [__shared__only___04_Create_Groups] [ERROR]:	res = func(*args, **kwargs)
+[2020-06-01 16:13:44,353] [__shared__only___04_Create_Groups] [ERROR]:	File "/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/intermediate_pipeline_scripts/__shared__only___04_Create_Groups.py", line 63, in kronos_component_singularity_TASK_CREATE_GROUPS_function
+[2020-06-01 16:13:44,359] [__shared__only___04_Create_Groups] [ERROR]:	run_script = rm.generate_script(TASK_CREATE_GROUPS_task, None, None)
+[2020-06-01 16:13:44,360] [__shared__only___04_Create_Groups] [ERROR]:	File "/home/poahmadvand/py2env/lib/python2.7/site-packages/kronos/run_manager.py", line 113, in generate_script
+[2020-06-01 16:13:44,361] [__shared__only___04_Create_Groups] [ERROR]:	cmd, cmd_args = component.make_cmd(chunk)
+[2020-06-01 16:13:44,362] [__shared__only___04_Create_Groups] [ERROR]:	File "/projects/ovcare/classification/pouya/components/kronos_component_singularity/component_main.py", line 78, in make_cmd
+[2020-06-01 16:13:44,363] [__shared__only___04_Create_Groups] [ERROR]:	self.get_location_args(args, path_args, config_args)
+[2020-06-01 16:13:44,363] [__shared__only___04_Create_Groups] [ERROR]:	File "/projects/ovcare/classification/pouya/components/kronos_component_singularity/component_main.py", line 42, in get_location_args
+[2020-06-01 16:13:44,364] [__shared__only___04_Create_Groups] [ERROR]:	data = json.load(json_file)
+[2020-06-01 16:13:44,365] [__shared__only___04_Create_Groups] [ERROR]:	File "/usr/lib/python2.7/json/__init__.py", line 291, in load
+[2020-06-01 16:13:44,366] [__shared__only___04_Create_Groups] [ERROR]:	**kw)
+[2020-06-01 16:13:44,367] [__shared__only___04_Create_Groups] [ERROR]:	File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+[2020-06-01 16:13:44,368] [__shared__only___04_Create_Groups] [ERROR]:	return _default_decoder.decode(s)
+[2020-06-01 16:13:44,368] [__shared__only___04_Create_Groups] [ERROR]:	File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+[2020-06-01 16:13:44,369] [__shared__only___04_Create_Groups] [ERROR]:	obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+[2020-06-01 16:13:44,370] [__shared__only___04_Create_Groups] [ERROR]:	File "/usr/lib/python2.7/json/decoder.py", line 382, in raw_decode
+[2020-06-01 16:13:44,371] [__shared__only___04_Create_Groups] [ERROR]:	raise ValueError("No JSON object could be decoded")
+[2020-06-01 16:13:44,371] [__shared__only___04_Create_Groups] [ERROR]:	ValueError: No JSON object could be decoded
+[2020-06-01 16:13:44,580] [04_Create_Groups] [INFO]:	__shared__only___04_Create_Groups pipeline finished with exit code 255
+[2020-06-01 16:13:44,580] [04_Create_Groups] [INFO]:	
+[2020-06-01 16:13:44,594] [04_Create_Groups] [INFO]:	------------------------------
+[2020-06-01 16:13:44,607] [04_Create_Groups] [INFO]:	 PIPELINE ENDS
+[2020-06-01 16:13:44,612] [04_Create_Groups] [INFO]:	------------------------------
+[2020-06-01 16:13:44,634] [04_Create_Groups] [INFO]:	finish date: 2020-06-01 16:13:44
+[2020-06-01 16:13:44,642] [04_Create_Groups] [INFO]:	04_Create_Groups pipeline finished with exit code 98. Please check the logs.

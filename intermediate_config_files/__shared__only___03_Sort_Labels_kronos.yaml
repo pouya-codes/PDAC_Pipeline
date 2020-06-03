@@ -1,0 +1,58 @@
+__PIPELINE_INFO__: 
+    date_last_updated: 
+    name: 'Pipeline'
+    data_type: 
+    author: 'cchen'
+    Kronos_version: '2.3.0'
+    host_cluster: 
+    version: '0.00.1'
+    input_type: 
+    date_created: '2019-05-07'
+    output_type: 
+__GENERAL__: 
+    docker: '__REQUIRED__'
+__SHARED__: 
+    anno_loc: 
+    patch_loc: 
+    img_loc: 
+__SAMPLES__: 
+    # sample_id:
+    #    param1: value1
+    #    param2: value2
+
+TASK_SORT_PATCHES_BY_LABEL: 
+    reserved: 
+        # do not change this section.
+        seed_version: '0.00.1'
+        component_version: '0.00.1'
+        component_name: 'kronos_component_singularity'
+    run: 
+        interval_file: 
+        requirements: 
+            docker: 
+        boilerplate: 
+        use_cluster: False
+        num_cpus: 1
+        parallel_run: False
+        merge: True
+        add_breakpoint: False
+        memory: '128G'
+        forced_dependencies: ['TASK_DOWNSAMPLE_DATA']
+        env_vars: 
+        parallel_params: []
+    component: 
+        input_files: 
+            patch_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256'
+            slurm_max_time: '10:00:00'
+            slurm_error: '/home/poahmadvand/ml/slurm/sort_patches_by_label.%j.err'
+            slurm_machine: 'dlhost02'
+            slurm_job_name: 'PDAC_sort_patches'
+            sorted_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted'
+            slurm_num_cpu: 1
+            slurm_num_gpu: 1
+            slurm_output: '/home/poahmadvand/ml/slurm/sort_patches_by_label.%j.out'
+            labels_file_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/labels_file.txt'
+            singularity_image: '/projects/ovcare/classification/pouya/components/docker_sort_patches_by_label/docker_sort_patches_by_label_latest.sif'
+            slurm_queue: 'dgxV100'
+        parameters: 
+        output_files: 

@@ -1,0 +1,6 @@
+{
+	"work_file_location" : "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/work",
+	"patch_location" : "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_1024",
+	"downsampled_location" : "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256",
+	"downsample_size" : 256
+}

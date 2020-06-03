@@ -1,0 +1,48 @@
+[2020-06-01 16:16:13,953] [04_Create_Groups] [INFO]:	------------------------------
+[2020-06-01 16:16:13,953] [04_Create_Groups] [INFO]:	 PIPELINE RUN INFO
+[2020-06-01 16:16:13,998] [04_Create_Groups] [INFO]:	------------------------------
+[2020-06-01 16:16:14,010] [04_Create_Groups] [INFO]:	Kronos version: 2.3.0
+[2020-06-01 16:16:14,041] [04_Create_Groups] [INFO]:	pipeline name: 04_Create_Groups
+[2020-06-01 16:16:14,047] [04_Create_Groups] [INFO]:	run id: 2020-06-01_16-16-13
+[2020-06-01 16:16:14,059] [04_Create_Groups] [INFO]:	launch date: 2020-06-01 16:16:14
+[2020-06-01 16:16:14,075] [04_Create_Groups] [INFO]:	user: poahmadvand
+[2020-06-01 16:16:14,090] [04_Create_Groups] [INFO]:	hostname: dlhost02
+[2020-06-01 16:16:14,097] [04_Create_Groups] [INFO]:	command line arguments:
+[2020-06-01 16:16:14,104] [04_Create_Groups] [INFO]:		drmaa_library_path		= lib/lx24-amd64/libdrmaa.so
+[2020-06-01 16:16:14,117] [04_Create_Groups] [INFO]:		no_key_legend		= False
+[2020-06-01 16:16:14,131] [04_Create_Groups] [INFO]:		extension		= png
+[2020-06-01 16:16:14,154] [04_Create_Groups] [INFO]:		run_id		= None
+[2020-06-01 16:16:14,167] [04_Create_Groups] [INFO]:		python_installation		= python
+[2020-06-01 16:16:14,184] [04_Create_Groups] [INFO]:		num_pipelines		= 1
+[2020-06-01 16:16:14,208] [04_Create_Groups] [INFO]:		no_prefix		= True
+[2020-06-01 16:16:14,215] [04_Create_Groups] [INFO]:		components_dir		= /projects/ovcare/classification/pouya/components
+[2020-06-01 16:16:14,240] [04_Create_Groups] [INFO]:		working_dir		= /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-06-01_16-16-13
+[2020-06-01 16:16:14,246] [04_Create_Groups] [INFO]:		print_only		= False
+[2020-06-01 16:16:14,265] [04_Create_Groups] [INFO]:		pipeline_name		= 04_Create_Groups
+[2020-06-01 16:16:14,284] [04_Create_Groups] [INFO]:		job_scheduler		= drmaa
+[2020-06-01 16:16:14,288] [04_Create_Groups] [INFO]:		draw_vertically		= False
+[2020-06-01 16:16:14,308] [04_Create_Groups] [INFO]:		log_file		= None
+[2020-06-01 16:16:14,318] [04_Create_Groups] [INFO]:		qsub_options		= None
+[2020-06-01 16:16:14,332] [04_Create_Groups] [INFO]:		num_jobs		= 1
+[2020-06-01 16:16:14,346] [04_Create_Groups] [INFO]:	------------------------------
+[2020-06-01 16:16:14,360] [04_Create_Groups] [INFO]:	 PIPELINE BEGINS
+[2020-06-01 16:16:14,367] [04_Create_Groups] [INFO]:	------------------------------
+[2020-06-01 16:16:14,519] [04_Create_Groups] [INFO]:	running __shared__only___04_Create_Groups pipeline with command: python /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/intermediate_pipeline_scripts/__shared__only___04_Create_Groups.py --drmaa_library_path 'lib/lx24-amd64/libdrmaa.so' --extension 'png' --run_id '2020-06-01_16-16-13' --python_installation 'python' --num_pipelines 1 --no_prefix --components_dir '/projects/ovcare/classification/pouya/components' --working_dir '/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-06-01_16-16-13' --pipeline_name '__shared__only___04_Create_Groups' --job_scheduler 'drmaa' --sample_id '__shared__only__' --log_file '/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-06-01_16-16-13/04_Create_Groups_2020-06-01_16-16-13.log' --num_jobs 1
+[2020-06-01 16:16:14,520] [04_Create_Groups] [INFO]:	
+[2020-06-01 16:16:15,261] [__shared__only___04_Create_Groups] [INFO]:	TASK_CREATE_GROUPS for kronos_component_singularity started in __shared__only___04_Create_Groups pipeline
+[2020-06-01 16:16:15,262] [__shared__only___04_Create_Groups] [INFO]:	
+[2020-06-01 16:16:15,333] [__shared__only___04_Create_Groups] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted/groups.json
+[2020-06-01 16:16:15,358] [__shared__only___04_Create_Groups] [INFO]:	
+[2020-06-01 16:16:15,390] [__shared__only___04_Create_Groups] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted
+[2020-06-01 16:16:15,407] [__shared__only___04_Create_Groups] [INFO]:	
+[2020-06-01 16:16:15,463] [__shared__only___04_Create_Groups] [INFO]:	Loc arg /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/04_Create_Groups.json
+[2020-06-01 16:16:15,475] [__shared__only___04_Create_Groups] [INFO]:	
+[2020-06-01 16:16:16,597] [__shared__only___04_Create_Groups] [INFO]:	job 52765 ("TASK_CREATE_GROUPS") has been launched locally
+[2020-06-01 16:16:16,608] [__shared__only___04_Create_Groups] [INFO]:	
+[2020-06-01 16:16:23,041] [04_Create_Groups] [INFO]:	__shared__only___04_Create_Groups pipeline finished with exit code 98
+[2020-06-01 16:16:23,041] [04_Create_Groups] [INFO]:	
+[2020-06-01 16:16:23,047] [04_Create_Groups] [INFO]:	------------------------------
+[2020-06-01 16:16:23,047] [04_Create_Groups] [INFO]:	 PIPELINE ENDS
+[2020-06-01 16:16:23,048] [04_Create_Groups] [INFO]:	------------------------------
+[2020-06-01 16:16:23,057] [04_Create_Groups] [INFO]:	finish date: 2020-06-01 16:16:23
+[2020-06-01 16:16:23,064] [04_Create_Groups] [INFO]:	04_Create_Groups pipeline finished with exit code 98. Please check the logs.

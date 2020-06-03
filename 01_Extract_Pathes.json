@@ -1,0 +1,6 @@
+{
+	"image_location": "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/slides",
+	"annotation_location": "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/Annotated",
+    "extracted_patch_location": "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_1024",
+	"patch_extraction_size": 1024
+}

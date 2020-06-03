@@ -1,0 +1,8 @@
+#job name: TASK_DIVIDE_WORK with job id: 21851
+#command
+/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-05-26_07-34-07/__shared__only___02_Preprocess/scripts/TASK_DIVIDE_WORK.sh
+#cmdout
+Submitted batch job 35110
+
+#cmderr
+

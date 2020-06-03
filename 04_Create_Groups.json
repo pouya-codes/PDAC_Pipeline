@@ -1,0 +1,10 @@
+{
+	"seed": 1,
+	"number_of_groups": 3,
+	"sorted_location": "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_2",
+	"output_location": "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_2/groups.json",
+	"min_patches": 1,
+	"target_num_patches": 100000,
+	"linker_location": "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/",
+	"full_mix": true
+}

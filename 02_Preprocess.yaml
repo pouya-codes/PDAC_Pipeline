@@ -1,0 +1,91 @@
+__PIPELINE_INFO__:
+    name: 'Pipeline'
+    version: '0.00.1'
+    author: 'cchen'
+    data_type:
+    input_type:
+    output_type:
+    host_cluster:
+    date_created: '2019-05-07'
+    date_last_updated:
+    Kronos_version: '2.3.0'
+__GENERAL__:
+    docker: '__REQUIRED__'
+__SHARED__:
+    img_loc :
+    patch_loc:
+    anno_loc:
+__SAMPLES__:
+
+# Pipeline for initial binary classification of Endometrial 100
+
+TASK_DIVIDE_WORK:
+    reserved:
+        component_name: 'kronos_component_singularity'
+        component_version: '0.00.1'
+        seed_version: '0.00.1'
+    run:
+        use_cluster: False
+        memory: '128G'
+        num_cpus: 1
+        forced_dependencies: []
+        add_breakpoint: False
+        env_vars:
+        boilerplate:
+        merge: True
+        requirements:
+            docker:
+        parallel_run: False
+        parallel_params: []
+        interval_file:
+    component:
+        input_files:
+            data_location: "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_1024"
+            work_location: "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/work"
+            N: 3
+            singularity_image: "/projects/ovcare/classification/pouya/components/docker_divide_work/docker_divide_work_latest.sif"
+            slurm_job_name: "divide_work_slurm"
+            slurm_num_cpu: 30
+            slurm_output: "/home/poahmadvand/ml/slurm/divide_work.%j.out"
+            slurm_error: "/home/poahmadvand/ml/slurm/divide_work.%j.err"
+            slurm_machine: "dlhost02"
+            slurm_queue: "dgxV100"
+            slurm_num_gpu: 1
+            slurm_max_time: "10:00:00"
+        output_files:
+        parameters:
+
+TASK_DOWNSAMPLE_DATA:
+    reserved:
+        component_name: 'kronos_component_singularity'
+        component_version: '0.00.1'
+        seed_version: '0.00.1'
+    run:
+        use_cluster: False
+        memory: '128G'
+        num_cpus: 30
+        forced_dependencies: ['TASK_DIVIDE_WORK']
+        add_breakpoint: False
+        env_vars:
+        boilerplate:
+        merge: True
+        requirements:
+            docker:
+        parallel_run: False
+        parallel_params: []
+        interval_file:
+    component:
+        input_files:
+            config_file_location: "/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/02_Preprocess.json"
+            singularity_image: "/projects/ovcare/classification/pouya/components/docker_downsample_data/docker_downsample_data_latest.sif"
+            slurm_job_name: "downsample_data_slurm"
+            slurm_num_cpu: 30
+            slurm_output: "/home/poahmadvand/ml/slurm/downsample_data.%j.out"
+            slurm_error: "/home/poahmadvand/ml/slurm/downsample_data.%j.err"
+            slurm_machine: "dlhost02"
+            slurm_queue: "dgxV100"
+            slurm_num_gpu: 1
+            slurm_max_time: "10:00:00"
+        output_files:
+        parameters:
+

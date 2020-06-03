@@ -1,0 +1,52 @@
+[2020-05-25 14:18:21,364] [01_Extract_Pathes] [INFO]:	------------------------------
+[2020-05-25 14:18:21,364] [01_Extract_Pathes] [INFO]:	 PIPELINE RUN INFO
+[2020-05-25 14:18:21,367] [01_Extract_Pathes] [INFO]:	------------------------------
+[2020-05-25 14:18:21,367] [01_Extract_Pathes] [INFO]:	Kronos version: 2.3.0
+[2020-05-25 14:18:21,368] [01_Extract_Pathes] [INFO]:	pipeline name: 01_Extract_Pathes
+[2020-05-25 14:18:21,368] [01_Extract_Pathes] [INFO]:	run id: 2020-05-25_14-18-21
+[2020-05-25 14:18:21,369] [01_Extract_Pathes] [INFO]:	launch date: 2020-05-25 14:18:21
+[2020-05-25 14:18:21,369] [01_Extract_Pathes] [INFO]:	user: poahmadvand
+[2020-05-25 14:18:21,370] [01_Extract_Pathes] [INFO]:	hostname: dlhost02
+[2020-05-25 14:18:21,371] [01_Extract_Pathes] [INFO]:	command line arguments:
+[2020-05-25 14:18:21,372] [01_Extract_Pathes] [INFO]:		drmaa_library_path		= lib/lx24-amd64/libdrmaa.so
+[2020-05-25 14:18:21,372] [01_Extract_Pathes] [INFO]:		no_key_legend		= False
+[2020-05-25 14:18:21,373] [01_Extract_Pathes] [INFO]:		extension		= png
+[2020-05-25 14:18:21,373] [01_Extract_Pathes] [INFO]:		run_id		= None
+[2020-05-25 14:18:21,374] [01_Extract_Pathes] [INFO]:		python_installation		= python
+[2020-05-25 14:18:21,375] [01_Extract_Pathes] [INFO]:		num_pipelines		= 1
+[2020-05-25 14:18:21,375] [01_Extract_Pathes] [INFO]:		no_prefix		= True
+[2020-05-25 14:18:21,376] [01_Extract_Pathes] [INFO]:		components_dir		= /projects/ovcare/classification/pouya/components
+[2020-05-25 14:18:21,377] [01_Extract_Pathes] [INFO]:		working_dir		= /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-05-25_14-18-21
+[2020-05-25 14:18:21,378] [01_Extract_Pathes] [INFO]:		print_only		= False
+[2020-05-25 14:18:21,379] [01_Extract_Pathes] [INFO]:		pipeline_name		= 01_Extract_Pathes
+[2020-05-25 14:18:21,379] [01_Extract_Pathes] [INFO]:		job_scheduler		= drmaa
+[2020-05-25 14:18:21,380] [01_Extract_Pathes] [INFO]:		draw_vertically		= False
+[2020-05-25 14:18:21,380] [01_Extract_Pathes] [INFO]:		log_file		= None
+[2020-05-25 14:18:21,381] [01_Extract_Pathes] [INFO]:		qsub_options		= None
+[2020-05-25 14:18:21,382] [01_Extract_Pathes] [INFO]:		num_jobs		= 1
+[2020-05-25 14:18:21,382] [01_Extract_Pathes] [INFO]:	------------------------------
+[2020-05-25 14:18:21,383] [01_Extract_Pathes] [INFO]:	 PIPELINE BEGINS
+[2020-05-25 14:18:21,383] [01_Extract_Pathes] [INFO]:	------------------------------
+[2020-05-25 14:18:21,498] [01_Extract_Pathes] [INFO]:	running __shared__only___01_Extract_Pathes pipeline with command: python /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/intermediate_pipeline_scripts/__shared__only___01_Extract_Pathes.py --drmaa_library_path 'lib/lx24-amd64/libdrmaa.so' --extension 'png' --run_id '2020-05-25_14-18-21' --python_installation 'python' --num_pipelines 1 --no_prefix --components_dir '/projects/ovcare/classification/pouya/components' --working_dir '/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-05-25_14-18-21' --pipeline_name '__shared__only___01_Extract_Pathes' --job_scheduler 'drmaa' --sample_id '__shared__only__' --log_file '/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-05-25_14-18-21/01_Extract_Pathes_2020-05-25_14-18-21.log' --num_jobs 1
+[2020-05-25 14:18:21,499] [01_Extract_Pathes] [INFO]:	
+[2020-05-25 14:18:21,767] [__shared__only___01_Extract_Pathes] [INFO]:	TASK_A for kronos_component_singularity started in __shared__only___01_Extract_Pathes pipeline
+[2020-05-25 14:18:21,767] [__shared__only___01_Extract_Pathes] [INFO]:	
+[2020-05-25 14:18:21,768] [__shared__only___01_Extract_Pathes] [INFO]:	Loc arg /projects/ovcare/WSI
+[2020-05-25 14:18:21,769] [__shared__only___01_Extract_Pathes] [INFO]:	
+[2020-05-25 14:18:21,770] [__shared__only___01_Extract_Pathes] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/slides
+[2020-05-25 14:18:21,771] [__shared__only___01_Extract_Pathes] [INFO]:	
+[2020-05-25 14:18:21,772] [__shared__only___01_Extract_Pathes] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_1024
+[2020-05-25 14:18:21,773] [__shared__only___01_Extract_Pathes] [INFO]:	
+[2020-05-25 14:18:21,774] [__shared__only___01_Extract_Pathes] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/Annotated
+[2020-05-25 14:18:21,774] [__shared__only___01_Extract_Pathes] [INFO]:	
+[2020-05-25 14:18:21,775] [__shared__only___01_Extract_Pathes] [INFO]:	Loc arg /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/01_Extract_Pathes.json
+[2020-05-25 14:18:21,776] [__shared__only___01_Extract_Pathes] [INFO]:	
+[2020-05-25 14:18:22,787] [__shared__only___01_Extract_Pathes] [INFO]:	job 8994 ("TASK_A") has been launched locally
+[2020-05-25 14:18:22,788] [__shared__only___01_Extract_Pathes] [INFO]:	
+[2020-05-25 14:18:25,117] [01_Extract_Pathes] [INFO]:	__shared__only___01_Extract_Pathes pipeline finished with exit code 98
+[2020-05-25 14:18:25,118] [01_Extract_Pathes] [INFO]:	
+[2020-05-25 14:18:25,123] [01_Extract_Pathes] [INFO]:	------------------------------
+[2020-05-25 14:18:25,124] [01_Extract_Pathes] [INFO]:	 PIPELINE ENDS
+[2020-05-25 14:18:25,125] [01_Extract_Pathes] [INFO]:	------------------------------
+[2020-05-25 14:18:25,125] [01_Extract_Pathes] [INFO]:	finish date: 2020-05-25 14:18:25
+[2020-05-25 14:18:25,126] [01_Extract_Pathes] [INFO]:	01_Extract_Pathes pipeline finished with exit code 98. Please check the logs.

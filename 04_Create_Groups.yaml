@@ -1,0 +1,53 @@
+__PIPELINE_INFO__:
+    name: 'Pipeline'
+    version: '0.00.1'
+    author: 'cchen'
+    data_type:
+    input_type:
+    output_type:
+    host_cluster:
+    date_created: '2019-05-07'
+    date_last_updated:
+    Kronos_version: '2.3.0'
+__GENERAL__:
+    docker: '__REQUIRED__'
+__SHARED__:
+    img_loc :
+    patch_loc:
+    anno_loc:
+__SAMPLES__:
+
+# Pipeline for initial binary classification of Endometrial 100
+
+TASK_CREATE_GROUPS:
+    reserved:
+        component_name: 'kronos_component_singularity'
+        component_version: '0.00.1'
+        seed_version: '0.00.1'
+    run:
+        use_cluster: False
+        memory: '128G'
+        num_cpus: 1
+        forced_dependencies: []
+        add_breakpoint: False
+        env_vars:
+        boilerplate:
+        merge: True
+        requirements:
+            docker:
+        parallel_run: False
+        parallel_params: []
+        interval_file:
+    component:
+        input_files:
+            config_file_location: "/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/04_Create_Groups.json"
+            singularity_image: "/projects/ovcare/classification/pouya/components/docker_create_groups_old/docker_create_groups.sif"
+            slurm_job_name: "create_groups"
+            slurm_num_cpu: 2
+            slurm_output: "/home/poahmadvand/ml/slurm/create_groups.%j.out"
+            slurm_error: "/home/poahmadvand/ml/slurm/create_groups.%j.err"
+            slurm_machine: "dlhost02"
+            slurm_queue: "dgxV100"
+            slurm_max_time: "10:00:00"
+        output_files:
+        parameters:

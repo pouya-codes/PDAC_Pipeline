@@ -1,0 +1,41 @@
+[2020-05-27 05:26:52,424] [02_Preprocess] [INFO]:	------------------------------
+[2020-05-27 05:26:52,424] [02_Preprocess] [INFO]:	 PIPELINE RUN INFO
+[2020-05-27 05:26:52,426] [02_Preprocess] [INFO]:	------------------------------
+[2020-05-27 05:26:52,426] [02_Preprocess] [INFO]:	Kronos version: 2.3.0
+[2020-05-27 05:26:52,427] [02_Preprocess] [INFO]:	pipeline name: 02_Preprocess
+[2020-05-27 05:26:52,427] [02_Preprocess] [INFO]:	run id: 2020-05-27_05-26-52
+[2020-05-27 05:26:52,428] [02_Preprocess] [INFO]:	launch date: 2020-05-27 05:26:52
+[2020-05-27 05:26:52,428] [02_Preprocess] [INFO]:	user: poahmadvand
+[2020-05-27 05:26:52,429] [02_Preprocess] [INFO]:	hostname: dlhost02
+[2020-05-27 05:26:52,430] [02_Preprocess] [INFO]:	command line arguments:
+[2020-05-27 05:26:52,431] [02_Preprocess] [INFO]:		drmaa_library_path		= lib/lx24-amd64/libdrmaa.so
+[2020-05-27 05:26:52,431] [02_Preprocess] [INFO]:		no_key_legend		= False
+[2020-05-27 05:26:52,432] [02_Preprocess] [INFO]:		extension		= png
+[2020-05-27 05:26:52,432] [02_Preprocess] [INFO]:		run_id		= None
+[2020-05-27 05:26:52,433] [02_Preprocess] [INFO]:		python_installation		= python
+[2020-05-27 05:26:52,434] [02_Preprocess] [INFO]:		num_pipelines		= 1
+[2020-05-27 05:26:52,434] [02_Preprocess] [INFO]:		no_prefix		= True
+[2020-05-27 05:26:52,435] [02_Preprocess] [INFO]:		components_dir		= /projects/ovcare/classification/pouya/components
+[2020-05-27 05:26:52,435] [02_Preprocess] [INFO]:		working_dir		= /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-05-27_05-26-52
+[2020-05-27 05:26:52,436] [02_Preprocess] [INFO]:		print_only		= False
+[2020-05-27 05:26:52,436] [02_Preprocess] [INFO]:		pipeline_name		= 02_Preprocess
+[2020-05-27 05:26:52,437] [02_Preprocess] [INFO]:		job_scheduler		= drmaa
+[2020-05-27 05:26:52,437] [02_Preprocess] [INFO]:		draw_vertically		= False
+[2020-05-27 05:26:52,438] [02_Preprocess] [INFO]:		log_file		= None
+[2020-05-27 05:26:52,438] [02_Preprocess] [INFO]:		qsub_options		= None
+[2020-05-27 05:26:52,439] [02_Preprocess] [INFO]:		num_jobs		= 1
+[2020-05-27 05:26:52,439] [02_Preprocess] [INFO]:	------------------------------
+[2020-05-27 05:26:52,440] [02_Preprocess] [INFO]:	 PIPELINE BEGINS
+[2020-05-27 05:26:52,440] [02_Preprocess] [INFO]:	------------------------------
+[2020-05-27 05:26:52,555] [02_Preprocess] [INFO]:	running __shared__only___02_Preprocess pipeline with command: python /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/intermediate_pipeline_scripts/__shared__only___02_Preprocess.py --drmaa_library_path 'lib/lx24-amd64/libdrmaa.so' --extension 'png' --run_id '2020-05-27_05-26-52' --python_installation 'python' --num_pipelines 1 --no_prefix --components_dir '/projects/ovcare/classification/pouya/components' --working_dir '/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-05-27_05-26-52' --pipeline_name '__shared__only___02_Preprocess' --job_scheduler 'drmaa' --sample_id '__shared__only__' --log_file '/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-05-27_05-26-52/02_Preprocess_2020-05-27_05-26-52.log' --num_jobs 1
+[2020-05-27 05:26:52,556] [02_Preprocess] [INFO]:	
+[2020-05-27 05:26:52,974] [__shared__only___02_Preprocess] [INFO]:	TASK_DIVIDE_WORK for kronos_component_singularity started in __shared__only___02_Preprocess pipeline
+[2020-05-27 05:26:52,974] [__shared__only___02_Preprocess] [INFO]:	
+[2020-05-27 05:26:52,975] [__shared__only___02_Preprocess] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/work
+[2020-05-27 05:26:52,976] [__shared__only___02_Preprocess] [INFO]:	
+[2020-05-27 05:26:52,979] [__shared__only___02_Preprocess] [INFO]:	Create dir: /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/work
+[2020-05-27 05:26:52,979] [__shared__only___02_Preprocess] [INFO]:	
+[2020-05-27 05:26:52,980] [__shared__only___02_Preprocess] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_1024
+[2020-05-27 05:26:52,980] [__shared__only___02_Preprocess] [INFO]:	
+[2020-05-27 05:26:53,995] [__shared__only___02_Preprocess] [INFO]:	job 47168 ("TASK_DIVIDE_WORK") has been launched locally
+[2020-05-27 05:26:53,996] [__shared__only___02_Preprocess] [INFO]:	

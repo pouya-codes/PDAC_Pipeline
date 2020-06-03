@@ -1,0 +1,50 @@
+[2020-05-26 07:24:37,811] [02_Preprocess] [INFO]:	------------------------------
+[2020-05-26 07:24:37,811] [02_Preprocess] [INFO]:	 PIPELINE RUN INFO
+[2020-05-26 07:24:37,813] [02_Preprocess] [INFO]:	------------------------------
+[2020-05-26 07:24:37,813] [02_Preprocess] [INFO]:	Kronos version: 2.3.0
+[2020-05-26 07:24:37,814] [02_Preprocess] [INFO]:	pipeline name: 02_Preprocess
+[2020-05-26 07:24:37,814] [02_Preprocess] [INFO]:	run id: 2020-05-26_07-24-37
+[2020-05-26 07:24:37,815] [02_Preprocess] [INFO]:	launch date: 2020-05-26 07:24:37
+[2020-05-26 07:24:37,815] [02_Preprocess] [INFO]:	user: poahmadvand
+[2020-05-26 07:24:37,816] [02_Preprocess] [INFO]:	hostname: dlhost02
+[2020-05-26 07:24:37,817] [02_Preprocess] [INFO]:	command line arguments:
+[2020-05-26 07:24:37,817] [02_Preprocess] [INFO]:		drmaa_library_path		= lib/lx24-amd64/libdrmaa.so
+[2020-05-26 07:24:37,818] [02_Preprocess] [INFO]:		no_key_legend		= False
+[2020-05-26 07:24:37,818] [02_Preprocess] [INFO]:		extension		= png
+[2020-05-26 07:24:37,819] [02_Preprocess] [INFO]:		run_id		= None
+[2020-05-26 07:24:37,819] [02_Preprocess] [INFO]:		python_installation		= python
+[2020-05-26 07:24:37,820] [02_Preprocess] [INFO]:		num_pipelines		= 1
+[2020-05-26 07:24:37,820] [02_Preprocess] [INFO]:		no_prefix		= True
+[2020-05-26 07:24:37,821] [02_Preprocess] [INFO]:		components_dir		= /projects/ovcare/classification/pouya/components
+[2020-05-26 07:24:37,821] [02_Preprocess] [INFO]:		working_dir		= /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-05-26_07-24-37
+[2020-05-26 07:24:37,822] [02_Preprocess] [INFO]:		print_only		= False
+[2020-05-26 07:24:37,822] [02_Preprocess] [INFO]:		pipeline_name		= 02_Preprocess
+[2020-05-26 07:24:37,823] [02_Preprocess] [INFO]:		job_scheduler		= drmaa
+[2020-05-26 07:24:37,824] [02_Preprocess] [INFO]:		draw_vertically		= False
+[2020-05-26 07:24:37,824] [02_Preprocess] [INFO]:		log_file		= None
+[2020-05-26 07:24:37,824] [02_Preprocess] [INFO]:		qsub_options		= None
+[2020-05-26 07:24:37,825] [02_Preprocess] [INFO]:		num_jobs		= 1
+[2020-05-26 07:24:37,825] [02_Preprocess] [INFO]:	------------------------------
+[2020-05-26 07:24:37,826] [02_Preprocess] [INFO]:	 PIPELINE BEGINS
+[2020-05-26 07:24:37,826] [02_Preprocess] [INFO]:	------------------------------
+[2020-05-26 07:24:37,960] [02_Preprocess] [INFO]:	running __shared__only___02_Preprocess pipeline with command: python /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/intermediate_pipeline_scripts/__shared__only___02_Preprocess.py --drmaa_library_path 'lib/lx24-amd64/libdrmaa.so' --extension 'png' --run_id '2020-05-26_07-24-37' --python_installation 'python' --num_pipelines 1 --no_prefix --components_dir '/projects/ovcare/classification/pouya/components' --working_dir '/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-05-26_07-24-37' --pipeline_name '__shared__only___02_Preprocess' --job_scheduler 'drmaa' --sample_id '__shared__only__' --log_file '/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-05-26_07-24-37/02_Preprocess_2020-05-26_07-24-37.log' --num_jobs 1
+[2020-05-26 07:24:37,961] [02_Preprocess] [INFO]:	
+[2020-05-26 07:24:38,414] [__shared__only___02_Preprocess] [INFO]:	TASK_DIVIDE_WORK for kronos_component_singularity started in __shared__only___02_Preprocess pipeline
+[2020-05-26 07:24:38,414] [__shared__only___02_Preprocess] [INFO]:	
+[2020-05-26 07:24:38,415] [__shared__only___02_Preprocess] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/work
+[2020-05-26 07:24:38,415] [__shared__only___02_Preprocess] [INFO]:	
+[2020-05-26 07:24:38,446] [__shared__only___02_Preprocess] [INFO]:	Create dir: /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/work
+[2020-05-26 07:24:38,446] [__shared__only___02_Preprocess] [INFO]:	
+[2020-05-26 07:24:38,447] [__shared__only___02_Preprocess] [INFO]:	Loc arg /projects/ovcare/classification/cchen
+[2020-05-26 07:24:38,448] [__shared__only___02_Preprocess] [INFO]:	
+[2020-05-26 07:24:38,449] [__shared__only___02_Preprocess] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_1024
+[2020-05-26 07:24:38,450] [__shared__only___02_Preprocess] [INFO]:	
+[2020-05-26 07:24:39,476] [__shared__only___02_Preprocess] [INFO]:	job 21526 ("TASK_DIVIDE_WORK") has been launched locally
+[2020-05-26 07:24:39,477] [__shared__only___02_Preprocess] [INFO]:	
+[2020-05-26 07:24:41,874] [02_Preprocess] [INFO]:	__shared__only___02_Preprocess pipeline finished with exit code 98
+[2020-05-26 07:24:41,874] [02_Preprocess] [INFO]:	
+[2020-05-26 07:24:41,878] [02_Preprocess] [INFO]:	------------------------------
+[2020-05-26 07:24:41,879] [02_Preprocess] [INFO]:	 PIPELINE ENDS
+[2020-05-26 07:24:41,879] [02_Preprocess] [INFO]:	------------------------------
+[2020-05-26 07:24:41,880] [02_Preprocess] [INFO]:	finish date: 2020-05-26 07:24:41
+[2020-05-26 07:24:41,880] [02_Preprocess] [INFO]:	02_Preprocess pipeline finished with exit code 98. Please check the logs.
