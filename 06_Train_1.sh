@@ -2,7 +2,7 @@
 #SBATCH --job-name PDAC_train_1
 #SBATCH --cpus-per-task 1
 #SBATCH --output /home/poahmadvand/ml/slurm/%j.out
-#SBATCH --error /home/poahmadvand/ml/slurm/%j.out
+#SBATCH --error /home/poahmadvand/ml/slurm/%j.err
 #SBATCH -w dlhost04
 #SBATCH -p rtx5000
 #SBATCH --gres=gpu:1
