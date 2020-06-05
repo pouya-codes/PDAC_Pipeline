@@ -10,6 +10,7 @@
 #SBATCH --chdir /projects/ovcare/classification/pouya/components/docker_benchmark_pytorch
 
 source /home/poahmadvand/py3env/bin/activate
+pip install -r requirements.txt
 python app.py --config_file_location "/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/06_Train_1.json"
 #kronos run \
 #	-c $PWD/../ \
