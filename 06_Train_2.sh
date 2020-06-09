@@ -8,6 +8,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --time=4-90:00:00
 #SBATCH --chdir /projects/ovcare/classification/pouya/components/docker_benchmark_pytorch
+#SBATCH --mem=45G
 
 source /home/poahmadvand/py3env/bin/activate
 python app.py --config_file_location "/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/06_Train_2.json"

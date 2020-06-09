@@ -46,7 +46,7 @@ TASK_CREATE_TRAINING_FILES_1:
     component: 
         input_files: 
             slurm_error: '/home/poahmadvand/ml/slurm/create_training_files_1.%j.err'
-            chunk_file_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_2/chunks.json'
+            chunk_file_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted/chunks.json'
             linker_location: '/projects/ovcare/classification'
             output_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/training_chunks_1.json'
             seed: 1
@@ -87,7 +87,7 @@ TASK_CREATE_TRAINING_FILES_2:
     component: 
         input_files: 
             slurm_error: '/home/poahmadvand/ml/slurm/create_training_files_2.%j.err'
-            chunk_file_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_2/chunks.json'
+            chunk_file_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted/chunks.json'
             linker_location: '/projects/ovcare/classification'
             output_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/training_chunks_2.json'
             seed: 1
@@ -128,7 +128,7 @@ TASK_CREATE_TRAINING_FILES_3:
     component: 
         input_files: 
             slurm_error: '/home/poahmadvand/ml/slurm/create_training_files_3.%j.err'
-            chunk_file_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_2/chunks.json'
+            chunk_file_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted/chunks.json'
             linker_location: '/projects/ovcare/classification/'
             output_location: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/training_chunks_3.json'
             seed: 1

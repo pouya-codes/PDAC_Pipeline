@@ -40,7 +40,7 @@ TASK_CREATE_TRAINING_FILES_1:
     component:
         input_files:
             seed: 1
-            chunk_file_location: "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_2/chunks.json"
+            chunk_file_location: "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted/chunks.json"
             output_location: "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/training_chunks_1.json"
             training_chunks: "0_1"
             validation_chunks: "2"
@@ -81,7 +81,7 @@ TASK_CREATE_TRAINING_FILES_2:
     component:
         input_files:
             seed: 1
-            chunk_file_location: "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_2/chunks.json"
+            chunk_file_location: "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted/chunks.json"
             output_location: "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/training_chunks_2.json"
             training_chunks: "1_2"
             validation_chunks: "0"
@@ -122,7 +122,7 @@ TASK_CREATE_TRAINING_FILES_3:
     component:
         input_files:
             seed: 1
-            chunk_file_location: "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_2/chunks.json"
+            chunk_file_location: "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted/chunks.json"
             output_location: "/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/training_chunks_3.json"
             training_chunks: "0_2"
             validation_chunks: "1"

@@ -1,0 +1,68 @@
+[2020-06-05 19:15:38,255] [05_Create_Train_Files] [INFO]:	------------------------------
+[2020-06-05 19:15:38,255] [05_Create_Train_Files] [INFO]:	 PIPELINE RUN INFO
+[2020-06-05 19:15:38,258] [05_Create_Train_Files] [INFO]:	------------------------------
+[2020-06-05 19:15:38,258] [05_Create_Train_Files] [INFO]:	Kronos version: 2.3.0
+[2020-06-05 19:15:38,259] [05_Create_Train_Files] [INFO]:	pipeline name: 05_Create_Train_Files
+[2020-06-05 19:15:38,260] [05_Create_Train_Files] [INFO]:	run id: 2020-06-05_19-15-38
+[2020-06-05 19:15:38,261] [05_Create_Train_Files] [INFO]:	launch date: 2020-06-05 19:15:38
+[2020-06-05 19:15:38,262] [05_Create_Train_Files] [INFO]:	user: poahmadvand
+[2020-06-05 19:15:38,263] [05_Create_Train_Files] [INFO]:	hostname: dlhost02
+[2020-06-05 19:15:38,263] [05_Create_Train_Files] [INFO]:	command line arguments:
+[2020-06-05 19:15:38,264] [05_Create_Train_Files] [INFO]:		drmaa_library_path		= lib/lx24-amd64/libdrmaa.so
+[2020-06-05 19:15:38,264] [05_Create_Train_Files] [INFO]:		no_key_legend		= False
+[2020-06-05 19:15:38,265] [05_Create_Train_Files] [INFO]:		extension		= png
+[2020-06-05 19:15:38,266] [05_Create_Train_Files] [INFO]:		run_id		= None
+[2020-06-05 19:15:38,266] [05_Create_Train_Files] [INFO]:		python_installation		= python
+[2020-06-05 19:15:38,267] [05_Create_Train_Files] [INFO]:		num_pipelines		= 1
+[2020-06-05 19:15:38,268] [05_Create_Train_Files] [INFO]:		no_prefix		= True
+[2020-06-05 19:15:38,268] [05_Create_Train_Files] [INFO]:		components_dir		= /projects/ovcare/classification/pouya/components
+[2020-06-05 19:15:38,269] [05_Create_Train_Files] [INFO]:		working_dir		= /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-06-05_19-15-38
+[2020-06-05 19:15:38,270] [05_Create_Train_Files] [INFO]:		print_only		= False
+[2020-06-05 19:15:38,271] [05_Create_Train_Files] [INFO]:		pipeline_name		= 05_Create_Train_Files
+[2020-06-05 19:15:38,271] [05_Create_Train_Files] [INFO]:		job_scheduler		= drmaa
+[2020-06-05 19:15:38,272] [05_Create_Train_Files] [INFO]:		draw_vertically		= False
+[2020-06-05 19:15:38,273] [05_Create_Train_Files] [INFO]:		log_file		= None
+[2020-06-05 19:15:38,280] [05_Create_Train_Files] [INFO]:		qsub_options		= None
+[2020-06-05 19:15:38,281] [05_Create_Train_Files] [INFO]:		num_jobs		= 1
+[2020-06-05 19:15:38,282] [05_Create_Train_Files] [INFO]:	------------------------------
+[2020-06-05 19:15:38,283] [05_Create_Train_Files] [INFO]:	 PIPELINE BEGINS
+[2020-06-05 19:15:38,283] [05_Create_Train_Files] [INFO]:	------------------------------
+[2020-06-05 19:15:38,400] [05_Create_Train_Files] [INFO]:	running __shared__only___05_Create_Train_Files pipeline with command: python /projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/intermediate_pipeline_scripts/__shared__only___05_Create_Train_Files.py --drmaa_library_path 'lib/lx24-amd64/libdrmaa.so' --extension 'png' --run_id '2020-06-05_19-15-38' --python_installation 'python' --num_pipelines 1 --no_prefix --components_dir '/projects/ovcare/classification/pouya/components' --working_dir '/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-06-05_19-15-38' --pipeline_name '__shared__only___05_Create_Train_Files' --job_scheduler 'drmaa' --sample_id '__shared__only__' --log_file '/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-06-05_19-15-38/05_Create_Train_Files_2020-06-05_19-15-38.log' --num_jobs 1
+[2020-06-05 19:15:38,401] [05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:38,940] [__shared__only___05_Create_Train_Files] [INFO]:	TASK_CREATE_TRAINING_FILES_2 for kronos_component_singularity started in __shared__only___05_Create_Train_Files pipeline
+[2020-06-05 19:15:38,940] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:38,941] [__shared__only___05_Create_Train_Files] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted/chunks.json
+[2020-06-05 19:15:38,942] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:38,943] [__shared__only___05_Create_Train_Files] [INFO]:	Loc arg /projects/ovcare/classification
+[2020-06-05 19:15:38,943] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:38,944] [__shared__only___05_Create_Train_Files] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/training_chunks_2.json
+[2020-06-05 19:15:38,945] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:39,959] [__shared__only___05_Create_Train_Files] [INFO]:	job 49287 ("TASK_CREATE_TRAINING_FILES_2") has been launched locally
+[2020-06-05 19:15:39,960] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:41,996] [__shared__only___05_Create_Train_Files] [INFO]:	TASK_CREATE_TRAINING_FILES_1 for kronos_component_singularity started in __shared__only___05_Create_Train_Files pipeline
+[2020-06-05 19:15:41,996] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:41,997] [__shared__only___05_Create_Train_Files] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted/chunks.json
+[2020-06-05 19:15:41,998] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:41,998] [__shared__only___05_Create_Train_Files] [INFO]:	Loc arg /projects/ovcare/classification
+[2020-06-05 19:15:41,999] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:42,000] [__shared__only___05_Create_Train_Files] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/training_chunks_1.json
+[2020-06-05 19:15:42,000] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:43,013] [__shared__only___05_Create_Train_Files] [INFO]:	job 49292 ("TASK_CREATE_TRAINING_FILES_1") has been launched locally
+[2020-06-05 19:15:43,028] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:45,066] [__shared__only___05_Create_Train_Files] [INFO]:	TASK_CREATE_TRAINING_FILES_3 for kronos_component_singularity started in __shared__only___05_Create_Train_Files pipeline
+[2020-06-05 19:15:45,067] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:45,068] [__shared__only___05_Create_Train_Files] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted/chunks.json
+[2020-06-05 19:15:45,069] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:45,069] [__shared__only___05_Create_Train_Files] [INFO]:	Loc arg /projects/ovcare/classification/
+[2020-06-05 19:15:45,070] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:45,071] [__shared__only___05_Create_Train_Files] [INFO]:	Loc arg /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/training_chunks_3.json
+[2020-06-05 19:15:45,072] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:46,085] [__shared__only___05_Create_Train_Files] [INFO]:	job 49297 ("TASK_CREATE_TRAINING_FILES_3") has been launched locally
+[2020-06-05 19:15:46,086] [__shared__only___05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:48,384] [05_Create_Train_Files] [INFO]:	__shared__only___05_Create_Train_Files pipeline finished with exit code 98
+[2020-06-05 19:15:48,385] [05_Create_Train_Files] [INFO]:	
+[2020-06-05 19:15:48,390] [05_Create_Train_Files] [INFO]:	------------------------------
+[2020-06-05 19:15:48,391] [05_Create_Train_Files] [INFO]:	 PIPELINE ENDS
+[2020-06-05 19:15:48,391] [05_Create_Train_Files] [INFO]:	------------------------------
+[2020-06-05 19:15:48,392] [05_Create_Train_Files] [INFO]:	finish date: 2020-06-05 19:15:48
+[2020-06-05 19:15:48,393] [05_Create_Train_Files] [INFO]:	05_Create_Train_Files pipeline finished with exit code 98. Please check the logs.

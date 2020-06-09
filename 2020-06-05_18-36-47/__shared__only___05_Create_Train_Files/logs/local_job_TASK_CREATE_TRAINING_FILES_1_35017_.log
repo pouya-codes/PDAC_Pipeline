@@ -1,0 +1,8 @@
+#job name: TASK_CREATE_TRAINING_FILES_1 with job id: 35017
+#command
+/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-06-05_18-36-47/__shared__only___05_Create_Train_Files/scripts/TASK_CREATE_TRAINING_FILES_1.sh
+#cmdout
+Submitted batch job 38733
+
+#cmderr
+

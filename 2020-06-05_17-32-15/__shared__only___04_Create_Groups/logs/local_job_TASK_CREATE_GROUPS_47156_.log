@@ -1,0 +1,18 @@
+#job name: TASK_CREATE_GROUPS with job id: 47156
+#command
+/projects/ovcare/classification/pouya/components/PDAC_Binary_Pipeline/2020-06-05_17-32-15/__shared__only___04_Create_Groups/scripts/TASK_CREATE_GROUPS.sh
+#cmdout
+
+#cmderr
+[33mWARNING:[0m skipping mount of /projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted/groups.json: no such file or directory
+Traceback (most recent call last):
+  File "app.py", line 225, in <module>
+    run()
+  File "app.py", line 221, in run
+    chunks = GenerateChunks(N, sorted_location, seed, min_patches, target_num_patches, full_mix)
+  File "app.py", line 121, in GenerateChunks
+    wsi_patch_paths = GetCasePaths(folder, min_patches, target_num_patches)
+  File "app.py", line 62, in GetCasePaths
+    files = os.listdir(os.path.join(folder, patch_type, category, wsi))
+NotADirectoryError: [Errno 20] Not a directory: '/projects/ovcare/classification/Diagnostic_TCGA_PDAC_cases/patches_256_sorted/Stroma/TCGA-3A-A9IL-01Z-00-DX1.BEB57CA5-223D-4330-BFFF-8202DCC857F3/8192_62464_d_256.png'
+
